@@ -1,0 +1,12 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 4vw;
+    text-align: center;
+    margin: 0px auto;
+    background: radial-gradient(#eff1ff, #121212 80%);
+    background-position: 50% 75%;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }

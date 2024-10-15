@@ -9,6 +9,11 @@ yarn install
 ```
 yarn serve
 ```
+### Tailwind css installation
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
 
 ### Compiles and minifies for production
 ```
