@@ -12,7 +12,8 @@ yarn serve
 ### Tailwind css installation
 ```
 npm install -D tailwindcss
-npx tailwindcss init
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
 ### Compiles and minifies for production
