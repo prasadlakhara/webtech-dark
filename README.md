@@ -27,4 +27,8 @@ yarn lint
 ```
 
 ### Customize configuration
+Checkout [FIgma](https://www.figma.com/community/file/1377626857173267316/tech-website-dark-theme-premium).
+
+
+### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
