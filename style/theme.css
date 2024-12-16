@@ -1,0 +1,306 @@
+@import './fonts.css';
+@import './bootstrap.css';
+
+:root {
+    --bs-primary-color: #121212;
+    --bs-secondary-color: #1E1E1E;
+    --bs-text-primary-color: #a1a1a1;
+    --bs-text-secondary-color: #f1f1f1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    background-color: var(--bs-primary-color);
+    color: var(--bs-text-primary-color);
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-title h1 {
+    font-family: 'Neutral Face', sans-serif;
+    color: var(--bs-text-secondary-color);
+    background: linear-gradient(130deg, #eff1ff 30%, #121212 67%);
+    background-position: 50% 75%;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0 !important;
+}
+
+.solution-title{
+    color: var(--bs-text-secondary-color);
+    background: linear-gradient(164deg, #eff1ff 40%, #121212 75%);
+    background-position: 50% 75%;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0 !important;
+}
+
+.bg-theme-dark{
+    background-color: var(--bs-primary-color);
+}
+
+.bg-dark{
+    background-color: #000000 !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Neutral Face', sans-serif;
+    color: var(--bs-text-secondary-color);
+    margin-bottom: 0 !important;
+}
+
+hr{
+    background-color: var(--bs-text-primary-color) !important;
+    opacity: 1 !important;
+    height: 2px !important;
+    border-radius: 10px;
+}
+
+hr:not([size]){
+    height: 2px !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.paragraph-quote{
+    font-size: 1.5rem;
+    color: var(--bs-text-secondary-color) !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.text-primary {
+    color: var(--bs-text-primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--bs-text-secondary-color) !important;
+}
+
+.navbar {
+    padding: 0.25rem 0;
+}
+
+.nav-link {
+    font-size: 0.825rem;
+    font-family: 'Neutral Face', sans-serif;
+    color: var(--bs-text-primary-color) !important;
+    letter-spacing: normal;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-item .active{
+    color: var(--bs-text-secondary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--bs-text-secondary-color) !important;
+    letter-spacing: 1.5px;
+}
+
+.theme-cta .arrow-icon {
+    margin-left: 8px;
+    rotate: -45deg;
+    transition: rotate 0.3s ease; 
+}
+
+.theme-cta:hover .arrow-icon {
+    rotate: 0deg; 
+}
+
+.logo-img{
+    max-width: 100px;
+    height: auto;
+}
+
+.btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.825rem;
+}
+
+.btn-outline-light {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--bs-text-primary-color) !important;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: transparent !important;
+    color: var(--bs-text-secondary-color) !important;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero-heading {
+    font-size: 3.5rem;
+}
+
+.hero-subheading {
+    font-size: 1.25rem;
+}
+
+.hero-title {
+    width: 90vw;
+}
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('/assets/imgs/hero-img.png');
+    background-size: cover; 
+    background-position: bottom right; 
+    background-repeat: no-repeat; 
+}
+
+.bg-blur {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#dustCanvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#about-us{
+    background: linear-gradient(180deg, #000000 30%, #1E1E1E 67%);
+    width: 100vw;
+    height: 100%;
+}
+
+#IT-solution{
+    background: linear-gradient(0deg, #000000 30%, #1E1E1E 67%);
+    width: 100vw;
+    height: 100%;
+}
+
+#our-services{
+    background: radial-gradient(circle at top left, #111111 10%, #000000 67%);
+    width: 100vw;
+    height: 100%;
+}
+
+#portfolio{
+    background: radial-gradient(circle at top right, #111111 10%, #000000 67%);
+    width: 100vw;
+    height: 100%;
+}
+
+.section-heading{
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+#counter-section .couunter-container .number-counter {
+    position: relative;
+    padding: 5px;
+  }
+  
+  #counter-section .couunter-container .number-counter:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 25%; 
+    right: 0; 
+    height: 50%; 
+    width: 1px; 
+    background-color: var(--bs-text-primary-color); 
+  }
+  
+  #counter-section .couunter-container {
+    display: flex; 
+    align-items: center; 
+  }
+  
+
+.card{
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 40px 25px !important;
+    transition: border 0.3s ease;
+}
+
+.card:hover{
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.card hr{
+    width: 45% !important;
+}
+
+  @media (max-width: 768px) {
+    #counter-section .couunter-container .number-counter {
+      border-right: none; 
+      border-bottom: 1px solid #ccc; 
+    }
+  
+    #counter-section .couunter-container .number-counter:not(:last-child)::after {
+        display: none; /* Remove vertical borders on smaller screens */
+      }
+  
+    #counter-section .couunter-container {
+      flex-direction: column; 
+    }
+  }
+  
+  .marquee-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.marquee span {
+    color: white;
+    font-size: 24px;
+    margin: 0 50px;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, black, transparent 10%, transparent 90%, black);
+    pointer-events: none;
+}
