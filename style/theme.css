@@ -7,7 +7,9 @@
     --bs-text-primary-color: #a1a1a1;
     --bs-text-secondary-color: #f1f1f1;
 }
-
+*{
+    user-select: none;
+}
 body {
     margin: 0;
     padding: 0;
