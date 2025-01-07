@@ -210,6 +210,11 @@ ul {
   width: 100vw;
   height: 100%;
 }
+#get-in-touch {
+  background: radial-gradient(circle at top left, #111111 10%, #000000 67%);
+  width: 100vw;
+  height: 100%;
+}
 
 #portfolio {
   background: radial-gradient(circle at top right, #111111 10%, #000000 67%);
@@ -718,4 +723,13 @@ display: inline-block;
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
+}
+
+
+
+
+
+
+.address-container{
+  height: 180px;
 }
