@@ -1,6 +1,6 @@
 
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 20,
     effect: 'fade',
     loop: true,

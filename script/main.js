@@ -38,8 +38,6 @@ function animateCounter(element, target, duration, label) {
   
   // Observe all counter elements
   counters.forEach(counter => observer.observe(counter));
-  
-  // cursor
   document.addEventListener("DOMContentLoaded", () => {
     const customCursor = document.createElement("div");
     customCursor.classList.add("custom-cursor");
@@ -47,19 +45,22 @@ function animateCounter(element, target, duration, label) {
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f1f1f1" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
     `;
     document.body.appendChild(customCursor);
-
-    const scrollContainer = document.querySelector(".accordion-horizontal-scroll");
-
+  
+    const scrollContainers = document.querySelectorAll(".accordion-horizontal-scroll");
+  
     document.addEventListener("mousemove", (e) => {
       customCursor.style.left = `${e.clientX}px`;
       customCursor.style.top = `${e.clientY}px`;
     });
-
-    scrollContainer.addEventListener("mouseenter", () => {
-      customCursor.style.transform = "scale(1)";
-    });
-
-    scrollContainer.addEventListener("mouseleave", () => {
-      customCursor.style.transform = "scale(0)";
+  
+    scrollContainers.forEach((scrollContainer) => {
+      scrollContainer.addEventListener("mouseenter", () => {
+        customCursor.style.transform = "scale(1)";
+      });
+  
+      scrollContainer.addEventListener("mouseleave", () => {
+        customCursor.style.transform = "scale(0)";
+      });
     });
   });
+  
