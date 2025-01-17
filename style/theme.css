@@ -782,3 +782,9 @@ display: inline-block;
   color: var(--bs-text-primary-color) !important;
   box-shadow: unset !important;
 }
+
+
+footer .nav .nav-item{
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.825rem;
+}
