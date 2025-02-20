@@ -62,5 +62,32 @@ function animateCounter(element, target, duration, label) {
         customCursor.style.transform = "scale(0)";
       });
     });
+
+    // Section transition animation
+    const sections = document.querySelectorAll('section');
+    
+    const sectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Optional: Unobserve after animation
+            // observer.unobserve(entry.target);
+          }
+          // Optional: Remove class when section is not in view
+          // else {
+          //   entry.target.classList.remove('visible');
+          // }
+        });
+      },
+      {
+        threshold: 0.15, // Trigger when 15% of the section is visible
+        rootMargin: '0px' // No margin
+      }
+    );
+
+    sections.forEach(section => {
+      sectionObserver.observe(section);
+    });
   });
   
